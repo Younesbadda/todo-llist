@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="night">
+  
+
+  <div class="background"></div>
+  <div class="wrapper">
+    <div class="header">
+      <h1>todo</h1> 
+      <img class="sun" src="/images/icon-sun.svg" alt="sun ">  
+    </div>
+    <div class="todo-input">
+      <button></button>
+      <input name="todo-input" id="value-input" aria-label="todo-input" type="text"
+        placeholder="Create a new todo...">
+    </div>
+
+    <div class="todos">
+      <ul id="simpleList"></ul>
+    </div>
+    <div class="footer">
+      <div class="count">
+        <span class=" countspa">0</span>
+        items left
+      </div> 
+      <div class="filters">
+          <label>
+            <input type="radio" name="filter" id="all" checked>
+            <span class="all">All</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" id="active" checked>
+            <span class="active">Active</span>
+          </label>
+          <label>
+            <input type="radio"  name="filter" id="completed" checked>
+            <span class="completed-checked">Completed</span>
+          </label>
+      </div>
+      <div class="clear">Clear Completed</div>
+    </div>
+
+    <div class="dragdrop">
+      <p>  Drag and drop to reorder list</p>
+    </div>  
+  </div>
+
+
+  
+
+
+  <script src="index.js"></script>
+
+</body>
+</html>
